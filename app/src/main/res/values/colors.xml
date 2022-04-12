@@ -10,4 +10,6 @@
     <color name="cell_bg">#C3C3C3</color>
     <color name="border">#808080</color>
     <color name="text_color">#808080</color>
+    <color name="rating_inactive">#5E5E5E</color>
+    <color name="rating_active">#FFD700</color><!--#0066FF-->
 </resources>

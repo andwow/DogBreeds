@@ -1,6 +1,5 @@
 package com.timusandrei.dogbreeds.singletons;
 
-import android.util.Log;
 import android.util.Xml;
 
 import com.timusandrei.dogbreeds.R;
@@ -9,15 +8,9 @@ import com.timusandrei.dogbreeds.models.Dog;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class DogStorage {
@@ -34,13 +27,7 @@ public class DogStorage {
         return dogs;
     }
 
-    private final String apartmentLiving = "apartmentLiving";
-    private final String familyDog = "familyDog";
-    private final String trainable = "trainable";
-    private final String firstTimeDog = "firstTimeDog";
-
     private DogStorage() {
-        InputStream inputStream = null;
         if(xmlFile!=null) {
             try {
                 dogs = parse(xmlFile);
@@ -52,22 +39,18 @@ public class DogStorage {
 
     }
 
-    public static InputStream getXmlFile() {
-        return xmlFile;
-    }
-
     public static void setXmlFile(InputStream xmlFile) {
         DogStorage.xmlFile = xmlFile;
     }
 
-    public static DogStorage getInstance() throws IOException, XmlPullParserException {
+    public static DogStorage getInstance() {
         if(instance == null) {
             instance = new DogStorage();
         }
         return instance;
     }
 
-    public List parse(InputStream in) throws IOException {
+    public List<Dog> parse(InputStream in) throws IOException {
         try {
             XmlPullParser parser = Xml.newPullParser();
             parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES, false);
@@ -82,8 +65,8 @@ public class DogStorage {
         return null;
     }
 
-    private List readFeed(XmlPullParser parser) throws XmlPullParserException, IOException {
-        List entries = new ArrayList();
+    private List<Dog> readFeed(XmlPullParser parser) throws XmlPullParserException, IOException {
+        List<Dog> entries = new ArrayList<>();
 
         parser.require(XmlPullParser.START_TAG, ns, "dogs");
         while (parser.next() != XmlPullParser.END_TAG) {
@@ -102,6 +85,12 @@ public class DogStorage {
     }
 
     private Dog readEntry(XmlPullParser parser) throws XmlPullParserException, IOException {
+
+        final String trainable = "trainable";
+        final String apartmentLiving = "apartmentLiving";
+        final String firstTimeDog = "firstTimeDog";
+        final String familyDog = "familyDog";
+
         parser.require(XmlPullParser.START_TAG, ns, "dog");
         int id = 1;
         String breedName = null;
@@ -114,32 +103,46 @@ public class DogStorage {
         float firstTimeDogRating = 0;
         int image = R.drawable.border_collie;
         while (parser.next() != XmlPullParser.END_TAG) {
+
             if (parser.getEventType() != XmlPullParser.START_TAG) {
                 continue;
             }
+
             String name = parser.getName();
-            if (name.equals("id")) {
-                id = readId(parser);
-            } else if (name.equals("name")) {
-                breedName = readName(parser);
-            } else if (name.equals("shortDescription")) {
-                shortDescription = readShortDescription(parser);
-            } else if (name.equals("longDescription")) {
-                longDescription = readLongDescription(parser);
-            }else if (name.equals("wikiUrl")) {
-                wikiUrl = readWikiUrl(parser);
-            } else if (name.equals("image")) {
-                image = readImage(parser);
-            }else if (name.equals(apartmentLiving)) {
-                apartmentLivingRating = readRating(parser, apartmentLiving);
-            }else if (name.equals(familyDog)) {
-                familyDogRating = readRating(parser, familyDog);
-            }else if (name.equals(trainable)) {
-                trainableRating = readRating(parser, trainable);
-            }else if (name.equals(firstTimeDog)) {
-                firstTimeDogRating = readRating(parser, firstTimeDog);
-            } else {
-                skip(parser);
+            switch (name) {
+                case "id":
+                    id = readId(parser);
+                    break;
+                case "name":
+                    breedName = readName(parser);
+                    break;
+                case "shortDescription":
+                    shortDescription = readShortDescription(parser);
+                    break;
+                case "longDescription":
+                    longDescription = readLongDescription(parser);
+                    break;
+                case "wikiUrl":
+                    wikiUrl = readWikiUrl(parser);
+                    break;
+                case "image":
+                    image = readImage(parser);
+                    break;
+                case apartmentLiving:
+                    apartmentLivingRating = readRating(parser, apartmentLiving);
+                    break;
+                case familyDog:
+                    familyDogRating = readRating(parser, familyDog);
+                    break;
+                case trainable:
+                    trainableRating = readRating(parser, trainable);
+                    break;
+                case firstTimeDog:
+                    firstTimeDogRating = readRating(parser, firstTimeDog);
+                    break;
+                default:
+                    skip(parser);
+                    break;
             }
         }
         return new Dog(id, breedName, shortDescription, longDescription, wikiUrl, image, apartmentLivingRating, familyDogRating, trainableRating, firstTimeDogRating);
