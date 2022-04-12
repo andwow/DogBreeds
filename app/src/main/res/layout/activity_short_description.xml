@@ -67,9 +67,9 @@
         android:textColor="@color/text_color"/>
 
     <RatingBar
+        android:id="@+id/apartment_living"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:id="@+id/apartment_living"
         android:max="5"
         android:numStars="5"
         android:stepSize="0.1"
@@ -81,9 +81,9 @@
         android:theme="@style/RatingBar"/>
 
     <RatingBar
+        android:id="@+id/family_dog"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:id="@+id/family_dog"
         android:max="5"
         android:numStars="5"
         android:stepSize="0.1"
@@ -122,9 +122,9 @@
         android:textColor="@color/text_color"/>
 
     <RatingBar
+        android:id="@+id/trainable"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:id="@+id/trainable"
         android:max="5"
         android:numStars="5"
         android:stepSize="0.1"
@@ -136,9 +136,9 @@
         android:theme="@style/RatingBar"/>
 
     <RatingBar
+        android:id="@+id/first_time_dog"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        android:id="@+id/first_time_dog"
         android:max="5"
         android:numStars="5"
         android:stepSize="0.1"
