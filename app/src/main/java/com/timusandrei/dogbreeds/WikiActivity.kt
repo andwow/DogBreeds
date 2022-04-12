@@ -19,10 +19,9 @@ class WikiActivity : AppCompatActivity() {
 
         webView.settings.loadsImagesAutomatically = true
         webView.scrollBarStyle = SCROLLBARS_INSIDE_OVERLAY
-        webView.getSettings().setJavaScriptEnabled(true)
         webView.webViewClient = WebViewClient()
 
-        if(url != null && !url.isEmpty()) {
+        if(url != null && url.isNotEmpty()) {
             webView.loadUrl(url)
         } else {
             webView.loadUrl(defaultUrl)

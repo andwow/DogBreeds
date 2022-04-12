@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">DogBreeds</string>
+    <string name="dog_image">Dog\'s image</string>
+    <string name="name">Name</string>
+    <string name="apartment_living">Apartment living</string>
+    <string name="family_dog">Family dog</string>
+    <string name="trainable">Trainable</string>
+    <string name="wikipedia_search">WIKIPEDIA SEARCH</string>
+    <string name="first_time_dog">First time dog</string>
+    <string name="desctiption">Desctiption</string>
+    <string name="main_page_greeting">Find the perfect dog breed for you</string>
+    <string name="see_more_details">SEE MORE DETAILS</string>
 </resources>

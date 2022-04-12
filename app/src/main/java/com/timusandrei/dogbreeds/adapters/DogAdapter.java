@@ -19,8 +19,9 @@ import java.util.List;
 
 public class DogAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private List<Dog> dogs;
-    private OnDogItemClick onDogItemClick;
+    private final List<Dog> dogs;
+
+    private final OnDogItemClick onDogItemClick;
 
     public DogAdapter(List<Dog> dogs, OnDogItemClick onDogItemClick) {
         this.dogs = dogs;
@@ -33,8 +34,7 @@ public class DogAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view = inflater.inflate(R.layout.dog_cell, parent, false);
-        DogViewHolder shopViewHolder = new DogViewHolder(view);
-        return shopViewHolder;
+        return new DogViewHolder(view);
     }
 
     @Override
@@ -49,10 +49,10 @@ public class DogAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     }
 
     class DogViewHolder extends RecyclerView.ViewHolder {
-        private TextView name;
-        private TextView description;
-        private ImageView profileImage;
-        private View view;
+        private final TextView name;
+        private final TextView description;
+        private final ImageView profileImage;
+        private final View view;
 
         DogViewHolder(View view) {
             super(view);
@@ -67,12 +67,7 @@ public class DogAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             description.setText(dog.getShortDescription());
             profileImage.setImageResource(dog.getProfileImage());
 
-            view.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    onDogItemClick.onClick(dog);
-                }
-            });
+            view.setOnClickListener(v -> onDogItemClick.onClick(dog));
         }
     }
 }

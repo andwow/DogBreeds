@@ -1,28 +1,26 @@
 package com.timusandrei.dogbreeds.models;
 
-import android.os.Parcelable;
-
 import com.timusandrei.dogbreeds.R;
 
-import java.io.Serializable;
+public final class Dog {
 
-public class Dog {
-
-    private int id;
-    private String name;
-    private String shortDescription;
-    private String longDescription;
-    private String wikiUrl;
-    private int profileImage;
-    private float apartmentLiving;
-    private float familyDog;
-    private float trainable;
-    private float firstTimeDog;
+    private final int id;
+    private final String name;
+    private final String shortDescription;
+    private final String longDescription;
+    private final String wikiUrl;
+    private final int profileImage;
+    private final float apartmentLiving;
+    private final float familyDog;
+    private final float trainable;
+    private final float firstTimeDog;
 
     public Dog() {
         this.id = 1;
         this.name = "Name";
         this.shortDescription = "Description";
+        this.longDescription = "Description";
+        this.wikiUrl = "https://en.wikipedia.org/wiki/Dog";
         this.profileImage = R.drawable.border_collie;
         this.apartmentLiving = 0f;
         this.familyDog = 0f;
@@ -48,79 +46,39 @@ public class Dog {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getShortDescription() {
         return shortDescription;
     }
 
-    public void setShortDescription(String shortDescription) {
-        this.shortDescription = shortDescription;
-    }
-
     public String getLongDescription() {
         return longDescription;
-    }
-
-    public void setLongDescription(String longDescription) {
-        this.longDescription = longDescription;
     }
 
     public int getProfileImage() {
         return profileImage;
     }
 
-    public void setProfileImage(int profileImage) {
-        this.profileImage = profileImage;
-    }
-
     public String getWikiUrl() {
         return wikiUrl;
-    }
-
-    public void setWikiUrl(String wikiUrl) {
-        this.wikiUrl = wikiUrl;
     }
 
     public float getApartmentLiving() {
         return apartmentLiving;
     }
 
-    public void setApartmentLiving(float apartmentLiving) {
-        this.apartmentLiving = apartmentLiving;
-    }
-
     public float getFamilyDog() {
         return familyDog;
-    }
-
-    public void setFamilyDog(float familyDog) {
-        this.familyDog = familyDog;
     }
 
     public float getTrainable() {
         return trainable;
     }
 
-    public void setTrainable(float trainable) {
-        this.trainable = trainable;
-    }
-
     public float getFirstTimeDog() {
         return firstTimeDog;
-    }
-
-    public void setFirstTimeDog(float firstTimeDog) {
-        this.firstTimeDog = firstTimeDog;
     }
 }

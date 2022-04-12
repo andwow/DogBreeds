@@ -12,7 +12,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="Find the perfect dog breed for you"
+        android:text="@string/main_page_greeting"
         android:textColor="@color/text_color"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:gravity="center"
