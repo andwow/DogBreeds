@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dogs>
+    <dog>
+        <id>1</id>
+        <name>Border Collie</name>
+        <shortDescription>Quite simply, the Border Collie is a dynamo</shortDescription>
+        <longDescription>The Border Collie is a British breed of herding dog of medium size. They are descended from landrace sheepdogs once found all over the British Isles, but became standardized in the Anglo-Scottish border region. Presently they are used primarily as working dogs to herd livestock, specifically sheep.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/Border_Collie</wikiUrl>
+        <image>2131165273</image>
+        <apartmentLiving>3</apartmentLiving>
+        <familyDog>5</familyDog>
+        <trainable>5</trainable>
+        <firstTimeDog>5</firstTimeDog>
+    </dog>
+    <dog>
+        <id>2</id>
+        <name>Beagle</name>
+        <shortDescription>Beagles are highly intelligent</shortDescription>
+        <longDescription>Because of their intelligence, Beagles are used by law enforcement at airports to sniff baggage for items that are not permitted. Due to their friendly nature and appearance, Beagles don't worry passengers.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/Beagle</wikiUrl>
+        <image>2131165272</image>
+        <apartmentLiving>3</apartmentLiving>
+        <familyDog>5</familyDog>
+        <trainable>3</trainable>
+        <firstTimeDog>2</firstTimeDog>
+    </dog>
+    <dog>
+        <id>3</id>
+        <name>Golden Retriever</name>
+        <shortDescription>Golden retrievers love a good game of fetch</shortDescription>
+        <longDescription>Goldens are sweet, loyal, and incredible companion dogs. They'd rather be sleeping at your feet then running around outside without you. They're also very even-tempered, especially with small children. Goldens make great service and comfort dogs because of their friendly and tolerant attitudes. Plus they were bred to retrieve ducks and other fowl for hunters, so if you like playing fetch, this is the dog for you.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/Golden_Retriever</wikiUrl>
+        <image>2131165291</image>
+        <apartmentLiving>4</apartmentLiving>
+        <familyDog>5</familyDog>
+        <trainable>5</trainable>
+        <firstTimeDog>4</firstTimeDog>
+    </dog>
+    <dog>
+        <id>4</id>
+        <name>German Shepherd</name>
+        <shortDescription>German Shepherds are incredibly loyal</shortDescription>
+        <longDescription>A relatively new breed (they date back to 1899), German Shepherds are exceptional animals: Courageous, obedient, incredibly loyal, and eager to learn. German Shepherds are very intelligent too, and excel at most anything they're trained to do. They're usually used as service dogs and police dogs to protect officers and locate drugs or human remains. German Shepherds love their humans so much that they will suffer from separation anxiety, and can become destructive when bored alone at home.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/German_Shepherd</wikiUrl>
+        <image>2131165290</image>
+        <apartmentLiving>2</apartmentLiving>
+        <familyDog>4</familyDog>
+        <trainable>5</trainable>
+        <firstTimeDog>3.5</firstTimeDog>
+    </dog>
+    <dog>
+        <id>5</id>
+        <name>Labrador Retriever</name>
+        <shortDescription>Labs' even temperaments make them incredibly useful as service dogs</shortDescription>
+        <longDescription>There's a reason why Labs are the most popular breed in Australia, Canada, New Zealand, the United Kingdom, as well as here in the US. They are devoted and obedient and have even temperaments that make them good with both children and other animals. Bred to be eager to please and playful companions, Labs are smart and commonly chosen as guide dogs and service dogs for blind or autistic individuals. They also make understanding therapy dogs, and can be trained to aid law enforcement and other official agencies by screening and detection work.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/Labrador_Retriever</wikiUrl>
+        <image>2131165303</image>
+        <apartmentLiving>4</apartmentLiving>
+        <familyDog>5</familyDog>
+        <trainable>5</trainable>
+        <firstTimeDog>4</firstTimeDog>
+    </dog>
+    <dog>
+        <id>6</id>
+        <name>Maltese</name>
+        <shortDescription>Maltese dogs have been around for thousands of years</shortDescription>
+        <longDescription>One of the most ancient of the toy breeds, Maltese dogs were bred to be sweet and adoring of their owners. The Greeks even erected tombs for their Maltese dogs, and in Elizabethan times, they were called "The Comforter" because it was believed they could relieve pain and cure illness. Maltese dogs are also extremely hypoallergenic, with silky coats that don't shed. And because of their size, these dogs are good for apartment living, too.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/Maltese_dog</wikiUrl>
+        <image>2131165312</image>
+        <apartmentLiving>5</apartmentLiving>
+        <familyDog>3</familyDog>
+        <trainable>4</trainable>
+        <firstTimeDog>5</firstTimeDog>
+    </dog>
+    <dog>
+        <id>7</id>
+        <name>Husky</name>
+        <shortDescription>Siberian huskies are known for their beautiful features</shortDescription>
+        <longDescription>Siberian huskies are stunning animals, with their thick fur coat and piercing eyes. Most people who choose a Husky do so for their extraordinary beauty. Huskies are good natured dogs who are affectionate with children. They shed minimally, except for twice a year when they blow out their coat, and don’t have the typical "dog odor" that bigger breeds tend to have. Huskies are not considered a great breed for first-time dog owners, since they need a lot of attention, exercise, and are very good at escaping and running away.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/Siberian_Husky</wikiUrl>
+        <image>2131165292</image>
+        <apartmentLiving>1</apartmentLiving>
+        <familyDog>4</familyDog>
+        <trainable>3</trainable>
+        <firstTimeDog>2</firstTimeDog>
+    </dog>
+    <dog>
+        <id>8</id>
+        <name>Corgi</name>
+        <shortDescription>Corgis love pleasing their owners</shortDescription>
+        <longDescription>Corgis have a cult-like following mainly due to their playful and sweet personalities. According to Welsh mythology, the Pembroke Welsh Corgi was even the transportation mode of choice for fairies. Though they can be shy with strangers, Corgis are good with children and have a strong desire to please their owners. They're also one of the silliest-looking dogs, with huge ears, a long torso, and a big butt. Just monitor their food intake closely since this breed is prone to overeating.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/Pembroke_Welsh_Corgi</wikiUrl>
+        <image>2131165283</image>
+        <apartmentLiving>5</apartmentLiving>
+        <familyDog>4.5</familyDog>
+        <trainable>4</trainable>
+        <firstTimeDog>5</firstTimeDog>
+    </dog>
+    <dog>
+        <id>9</id>
+        <name>Poodle</name>
+        <shortDescription>Poodles are one of the most protective breeds</shortDescription>
+        <longDescription>Poodles get a bad rap. But they're easy to train since they're so intelligent, and are lively, fun-loving, and loyal family dogs. Poodles can be attention seekers, so don't be surprised if this people-oriented breed is constantly with you. They're also protective of their families and homes, and can become aggressive with people outside the family or with other dogs.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/Poodle</wikiUrl>
+        <image>2131165347</image>
+        <apartmentLiving>5</apartmentLiving>
+        <familyDog>4</familyDog>
+        <trainable>5</trainable>
+        <firstTimeDog>4.5</firstTimeDog>
+    </dog>
+    <dog>
+        <id>10</id>
+        <name>Newfoundland Dog</name>
+        <shortDescription>Newfoundland dogs are known for being cooperative</shortDescription>
+        <longDescription>Known as "nature's babysitter," Newfoundland Dogs are the absolute sweetest. Perhaps the best-known Newfoundland is the fictional Nana from "Peter Pan," who was so wonderful with children. These gentle giants are highly loyal and easy to train, and are legendary for their docile temper. Newfoundland dogs are also strong swimmers, and the breed was trained to rescue people from drowning — one dog even famously saved Napoleon Bonaparte.</longDescription>
+        <wikiUrl>https://en.wikipedia.org/wiki/Newfoundland_dog</wikiUrl>
+        <image>2131165334</image>
+        <apartmentLiving>1</apartmentLiving>
+        <familyDog>4.5</familyDog>
+        <trainable>4.5</trainable>
+        <firstTimeDog>2</firstTimeDog>
+    </dog>
+</dogs>
